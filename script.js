@@ -123,11 +123,41 @@ function openModal(index, list) {
   const plant   = list[index];
   const overlay = document.getElementById('modalOverlay');
 
-  document.getElementById('modalImg').src = plant.photo;
-  document.getElementById('modalImg').alt = `Foto de ${plant.name}`;
-  document.getElementById('modalImg').onerror = function() {
+  const mainImg = document.getElementById('modalImg');
+  mainImg.src = plant.photo;
+  mainImg.alt = `Foto de ${plant.name}`;
+  mainImg.onerror = function() {
     this.src = `https://placehold.co/640x260/d8f3dc/2d6a4f?text=🌿+${encodeURIComponent(plant.name)}`;
   };
+
+  // Galeria de fotos extras
+  const gallery = document.getElementById('modalGallery');
+  gallery.innerHTML = '';
+  if (plant.photos && plant.photos.length > 0) {
+    gallery.classList.remove('hidden');
+    plant.photos.forEach((url, i) => {
+      const thumb = document.createElement('img');
+      thumb.src = url;
+      thumb.alt = `Foto ${i + 2} de ${plant.name}`;
+      thumb.loading = 'lazy';
+      thumb.title = `Foto ${i + 2}`;
+      thumb.onerror = function() {
+        this.src = `https://placehold.co/120x80/d8f3dc/2d6a4f?text=🌿`;
+      };
+      thumb.addEventListener('click', () => {
+        mainImg.src = url;
+        mainImg.onerror = function() {
+          this.src = `https://placehold.co/640x260/d8f3dc/2d6a4f?text=🌿+${encodeURIComponent(plant.name)}`;
+        };
+        gallery.querySelectorAll('img').forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+      });
+      gallery.appendChild(thumb);
+    });
+  } else {
+    gallery.classList.add('hidden');
+  }
+
   document.getElementById('modalName').textContent       = plant.name;
   document.getElementById('modalScientific').textContent = plant.scientific;
   document.getElementById('modalUses').textContent       = plant.uses;
