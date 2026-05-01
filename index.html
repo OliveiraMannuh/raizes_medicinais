@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raízes Medicinais 🌿</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <span class="logo-icon">🌿</span>
+        <div>
+          <h1>Raízes Medicinais</h1>
+          <p class="tagline">Preservando o saber das plantas que curam</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Um acervo vivo de sabedoria ancestral</h2>
+      <p>
+        Este espaço reúne o conhecimento popular e científico sobre plantas medicinais,
+        preservando tradições e auxiliando quem busca viver em harmonia com a natureza.
+      </p>
+    </div>
+  </section>
+
+  <!-- BUSCA -->
+  <main>
+    <div class="search-bar-container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍  Buscar planta por nome ou uso..."
+        oninput="filterPlants()"
+      />
+      <div class="filter-tags" id="filterTags"></div>
+    </div>
+
+    <!-- CONTAGEM -->
+    <p class="count-label" id="countLabel"></p>
+
+    <!-- GRID DE PLANTAS -->
+    <div class="plants-grid" id="plantsGrid"></div>
+
+    <!-- MENSAGEM DE NENHUM RESULTADO -->
+    <div class="no-results hidden" id="noResults">
+      <span>🌱</span>
+      <p>Nenhuma planta encontrada. Tente outro termo.</p>
+    </div>
+  </main>
+
+  <!-- MODAL DE DETALHES -->
+  <div class="modal-overlay hidden" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modal">
+      <button class="modal-close" onclick="closeModalBtn()">✕</button>
+      <div class="modal-img-wrap">
+        <img id="modalImg" src="" alt="" />
+      </div>
+      <div class="modal-body">
+        <h2 id="modalName"></h2>
+        <p class="modal-scientific" id="modalScientific"></p>
+        <div class="modal-tags" id="modalTags"></div>
+        <h3>🌿 Para que serve</h3>
+        <p id="modalUses"></p>
+        <h3>🍵 Como usar</h3>
+        <p id="modalHow"></p>
+        <div class="modal-warning" id="modalWarning"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>🌿 Raízes Medicinais &mdash; Feito com amor para preservar o conhecimento das plantas</p>
+    <p class="footer-disclaimer">
+      ⚠️ As informações aqui presentes têm caráter educativo e não substituem orientação médica.
+    </p>
+  </footer>
+
+  <script src="plants.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
