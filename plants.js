@@ -21,7 +21,17 @@ const plants = [
     uses: "O boldo-do-brasil é uma das plantas mais populares para problemas hepáticos e digestivos. Estimula a produção e o fluxo de bile, facilitando a digestão de gorduras. Auxilia na recuperação do fígado após ingestão excessiva de álcool ou alimentos gordurosos. Tem ação antiespasmódica e alivia gases e cólicas intestinais.",
     how: "Chá: 2 folhas médias frescas (ou 1 colher de chá das secas) para 200ml de água quente. Infusão de 5 a 8 minutos. Tomar 1 xícara antes das refeições principais ou após excesso alimentar. Não ferver as folhas — apenas infusionar.",
     warning: "⚠️ Uso prolongado pode ser hepatotóxico. Não usar durante a gravidez. Pessoas com cálculos biliares devem consultar médico. Usar por no máximo 3 semanas seguidas.",
-    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Plectranthus_barbatus2.jpg/800px-Plectranthus_barbatus2.jpg"
+    photo: "https://t4.ftcdn.net/jpg/01/70/65/65/360_F_170656500_TMC5cc1ygG5xFu8ZADXXw40Nwg5wgQJz.jpg"
+  },
+    {
+    name: "Colônia",
+    scientific: "Alpinia zerumbet",
+    tags: ["Calmante", "Hipotensora", "Diurética"],
+    shortUse: "Ajuda no relaxamento, pode auxiliar no controle da pressão alta e na retenção de líquidos.",
+    uses: "A colônia, também conhecida em algumas regiões como pacova, e tradicionalmente usada como calmante suave e para auxiliar no controle da hipertensao. Suas folhas sao usadas em chas e banhos para reduzir tensao, nervosismo e desconfortos leves. Tambem e empregada popularmente como diuretica, ajudando em casos de inchaco por retencao de liquidos.",
+    how: "Cha: 1 a 2 folhas picadas para 200ml de agua quente. Fazer infusao por 8 a 10 minutos, tampar e coar. Tomar 1 a 2 xicaras ao dia. Para banho relaxante: preparar infusao mais concentrada com 4 a 5 folhas em 1 litro de agua e adicionar a agua do banho.",
+    warning: "⚠️ Pode potencializar o efeito de medicamentos anti-hipertensivos e causar queda de pressao em pessoas sensiveis. Gestantes, lactantes e pessoas com pressao baixa devem usar somente com orientacao profissional.",
+    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQaL-rij93zKFhTbdwdA9V0DiD31tEtSHhWw&s"
   },
   {
     name: "Hortelã",
@@ -41,7 +51,7 @@ const plants = [
     uses: "A marcela é uma das plantas medicinais mais tradicionais do sul do Brasil. É amplamente usada para aliviar cólicas intestinais, gases, indigestão e náuseas. Possui ação anti-inflamatória, antiespasmódica e calmante suave. Também é utilizada no tratamento de gripes, resfriados e bronquite, além de auxiliar na redução da febre.",
     how: "Chá das flores secas: 1 colher de sopa para 200ml de água quente. Infusão de 10 minutos, tampar e coar. Tomar 2 a 3 xícaras ao dia, de preferência após as refeições. Pode ser combinada com erva-doce para potencializar o efeito digestivo.",
     warning: "⚠️ Contraindicada durante a gravidez. Pessoas com alergia a plantas da família Asteraceae devem evitar. Não usar por períodos prolongados sem orientação.",
-    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Achyrocline_satureioides_-_Marcela.jpg/800px-Achyrocline_satureioides_-_Marcela.jpg"
+    photo: "https://hortodidatico.ufsc.br/files/2020/02/MARCELA.jpg"
   },
   {
     name: "Erva-cidreira",
