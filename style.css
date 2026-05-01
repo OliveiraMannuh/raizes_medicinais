@@ -26,11 +26,7 @@ body {
 header {
   background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
   color: var(--white);
-<<<<<<< HEAD
   padding: 0.85rem 1.4rem;
-=======
-  padding: 1.2rem 2rem;
->>>>>>> 88929253c80e6b095f5c61577183873bb895add8
   box-shadow: 0 2px 12px rgba(0,0,0,0.18);
   position: sticky;
   top: 0;
@@ -42,7 +38,6 @@ header {
 .logo {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   gap: 0.7rem;
 }
 
@@ -65,23 +60,6 @@ header {
   margin-top: 0.15rem;
   letter-spacing: 0.15px;
   line-height: 1.25;
-=======
-  gap: 1rem;
-}
-
-.logo-icon { font-size: 2.4rem; }
-
-.logo h1 {
-  font-family: 'Merriweather', serif;
-  font-size: 1.7rem;
-  letter-spacing: 0.5px;
-}
-
-.tagline {
-  font-size: 0.85rem;
-  opacity: 0.85;
-  margin-top: 2px;
->>>>>>> 88929253c80e6b095f5c61577183873bb895add8
 }
 
 /* ===================== HERO ===================== */
